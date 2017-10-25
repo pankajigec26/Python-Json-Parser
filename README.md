@@ -1,36 +1,37 @@
 # Python-Json-Parser
 
-This simple framework is aim to parse json data , nodes in current case  , and then use their values in robotframework.
+This simple framework is aim to parse json data and then use the parse data in #robotframework
 
-Consider Node ("s6","ios") kindly refer  sample_json
-all the values between the nodes are stored in a dictionary as key value pair
-e.g.
-"title" as key and "android" as value
+Consider Node ("s6","ios") from  sample_json
 
-and at runtime new variables are getting created based on the keys present in dictionary and been assigned to their respective values in calling.robot
-eg.
-variable title created dynamically with value
-title=android
+all the values between the nodes are stored in a dictionary as key value pair e.g. "title" as key and "android" as value
 
-A liitle talk on the files present in this repository
 
-Sample_json.json
+
+our target is to create variable dynamically in a robot file with values assigned to them as per json 
+eg below variable at runtime  with values
+
+#title=android
+
+Some descriptions for the file present 
+
+#Sample_json.json
 
 Sample json file to give demo
 
-jsonparser.py 
+#jsonparser.py 
 Pyhton file which have methods defined to parse the data 
 
-json_env.py
+#json_env.py
 A python file where you declare some variables to start with 
 
 	device='S6'
 	dest_device='ios'
 	path='sample_json.json'
 	
-Calling.robot
+#Calling.robot
 
 Main robot file which actually creates variables dynamically and assign values to them as present in json
 
-run.bat
+#run.bat
 command to run this framework is stored here , we are passing json_env.py at runtime
