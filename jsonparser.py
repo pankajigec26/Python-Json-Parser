@@ -24,31 +24,10 @@ class jsonparse(object):
 		self.getting_attributes_of_phones()
 		self.title=self.device_attribute[key]
 		return self.title
-		#for key in kwargs:
-			#print key
-
-
-
-
-
-
-
-
 		
-#pprint(data)
-#print type(data)
-#print data
-##	print v
-	#print v
-#print(data['widget']['image']['name'])
-#print(data['widget']['window']['title'])
-#print(data['widget']['window'])
 
 
-abc=jsonparse('D:\Users\pankaj-m\Desktop\Pankaj_Robot_work\POC\sample_json.json','S6')
-abc.getting_attributes_of_phones()
-#print abc.get_values_from_json('height')
-#print abc.a
-#data={'title':5}
-#data=abc.a
-#print abc.get_values_from_json('title',**data)
+
+
+
+
